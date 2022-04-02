@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>termux remote multi-tools</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1 id="main">multi-tools</h1>
+        </center>
+    </header>
+    <main>
+        <hr>   
+        <div class="split left">
+            <br><br>
+            <div id="torch">
+                <h2>Lamp:</h2>
+                <span>
+                <label class="switch">
+                    <input type="hidden" name="checkboxName" id="torchvalue" value="0">
+                    <input type="checkbox" id="torchfunc">
+                    <span class="slider round"></span>
+                </label>
+            </span>
+            </div>
+            <div id="volume">
+                <h2>Volume</h2>
+                <input type="range" id="vol" name="vol" min="0" max="100">
+            </div>
+        </div>
+        <div class="split right">
+            <br><br>
+            <div id="vibrate">
+                <h2>Vibrate</h2>
+                <input type="number" id="vibrinput" placeholder="ms">
+            </div>
+            <br>
+            <div id="call">
+                <h2>call</h2>
+                <input type="number" id="callinput" placeholder="phone number">
+            </div>
+            <br>
+            <div id="say">
+                <h2>say</h2>
+                <input type="text" id="sayinput" placeholder="text to speech">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <hr>
+        <p>I know I suck at desiging, but it's better than a terminal TUI lol :')</p>
+    </footer>
+</body>
+</html>
